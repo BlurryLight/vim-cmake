@@ -182,7 +182,7 @@ function! cmake#console#Close() abort
     if bufexists(s:console_buffer)
         let l:cmake_window = bufwinnr(s:console_buffer)
         if l:cmake_window != -1
-            execute l:cmake_window . 'wincmd q'
+            execute l:cmake_window . 'close!'
         endif
     endif
 endfunction
